@@ -1,0 +1,100 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: purple;
+    text-decoration:  underline;
+    font-size: 70px;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.containers {
+    width:1100px;
+    height: 1200px;
+    margin: 0px auto;
+    background-image: url(../images/patron-dibujado-mano-herramientas-cocina_23-2147511747.avif);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header > h1 {
+    text-align: center;
+    padding: 40px;
+}
+
+
+article {
+    width: 300px;
+    margin: 10px;
+    text-align: left;
+}
+
+article h2 {
+    color: rgb(0, 0, 0);
+    padding: 8px 8px;
+}
+
+article:first-of-type {
+    background-color: blueviolet;
+}
+
+#Beff {
+   background-color: red;
+}
+
+
+
+#Other {
+    background-color: yellow;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 8px 8px;
+    text-transform: uppercase;
+}
+
+
+.Vegetables li:nth-child(odd) {
+    background-color: rgba(200, 160, 102, .2);
+}
+
+.Beff li:nth-child(odd) {
+    background-color: rgba(102,260,251, .2);
+}
+
+.Others li:nth-child(odd) {
+    background-color: rgba(100, 288, 100, .2);
+}
+
+input[type="checkbox"]:checked + span::after {
+    content: "\2713";
+    width: 15px;
+    height: 15px;
+    animation: fadeIn 0.7s;
+}
+
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
